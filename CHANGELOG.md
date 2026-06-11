@@ -1,8 +1,13 @@
 # Changelog
 
-## Revision 3 (WIP)
+## Revision 3 (as manufactured for EMF Camp)
 
 - switch back to high speed pins
+- Change shape
+- Move standoffs to bottom PCB
+- Add RGB LEDs and power conversion for them
+- Add art
+- Generate and add 3D models
 
 ## Revision 2
 
