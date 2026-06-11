@@ -58,7 +58,92 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "silk_edge_clearance|-44000000|-6994642|1029e585-afb7-4017-9a87-07090f610975|de6b21a6-3986-4a52-8d34-c192ce6291ac",
+          ""
+        ],
+        [
+          "silk_edge_clearance|-44000000|17092349|1029e585-afb7-4017-9a87-07090f610975|1fcf7718-2f25-4561-b4d7-8c93c21c5512",
+          ""
+        ],
+        [
+          "silk_edge_clearance|44003244|-26872542|922de560-f914-41cf-a22f-09de7bb29962|9f0d3ea3-e273-47ae-85f8-b47ab671bb26",
+          ""
+        ],
+        [
+          "silk_over_copper|-16360071|7112253|dae16608-37a4-4650-95f4-7bea0b6fbc5c|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_over_copper|-31551287|653095|431d43bc-4433-43f7-be26-44842417e17b|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_over_copper|-37684882|-41857766|de6b21a6-3986-4a52-8d34-c192ce6291ac|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_over_copper|-9352378|-25844947|30545e2e-1497-417f-91e5-8cd80585345f|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_over_copper|18259377|1670499|13db26d8-1191-474d-951f-f69935c9622a|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_over_copper|31010580|30467390|8d2f92d8-8b40-431d-876c-f94b375d1de2|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_over_copper|3455994|-18332791|0da5e3db-a571-407c-a6a9-e12ea5a6ab04|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_over_copper|41226685|-26149999|5054fa11-2857-4d19-9382-7db7d995bbaa|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_over_copper|41226687|26150000|3fb33549-b607-4c7f-ad63-59ddad8051ef|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_overlap|-13940000|26233617|3fb33549-b607-4c7f-ad63-59ddad8051ef|de08a25b-46a7-4fdb-a18f-056ca388098a",
+          ""
+        ],
+        [
+          "silk_overlap|-14610000|-26183617|5054fa11-2857-4d19-9382-7db7d995bbaa|6855c8c9-bffd-4ba5-9102-b71f67eb04e7",
+          ""
+        ],
+        [
+          "silk_overlap|-27960000|26233617|3fb33549-b607-4c7f-ad63-59ddad8051ef|748eaec3-4b7b-4db8-a478-f9d3c73994db",
+          ""
+        ],
+        [
+          "silk_overlap|-29269432|-26174309|5054fa11-2857-4d19-9382-7db7d995bbaa|69c9d7f8-e882-43dd-a40f-f77c740cbc80",
+          ""
+        ],
+        [
+          "silk_overlap|14010000|26183617|2ce1e1c7-ebc8-4a5b-bff4-a81e16bc33ba|3fb33549-b607-4c7f-ad63-59ddad8051ef",
+          ""
+        ],
+        [
+          "silk_overlap|16540000|-26228617|19d4de2f-7ebc-4c69-b629-cfb75ebdfba2|5054fa11-2857-4d19-9382-7db7d995bbaa",
+          ""
+        ],
+        [
+          "silk_overlap|28080000|26243617|3fb33549-b607-4c7f-ad63-59ddad8051ef|50d3dc31-7794-4756-926d-b7d44bc730c6",
+          ""
+        ],
+        [
+          "silk_overlap|28762114|-26149998|5054fa11-2857-4d19-9382-7db7d995bbaa|698a32a2-4d08-46db-bba7-e7bf267d19b5",
+          ""
+        ],
+        [
+          "silk_overlap|60000|26213617|3fb33549-b607-4c7f-ad63-59ddad8051ef|ea0bbba7-2709-49a4-9bed-6c612e9007e1",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -88,7 +173,7 @@
         "item_on_disabled_layer": "error",
         "items_not_allowed": "error",
         "length_out_of_range": "error",
-        "lib_footprint_issues": "warning",
+        "lib_footprint_issues": "ignore",
         "lib_footprint_mismatch": "ignore",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
@@ -126,7 +211,7 @@
         "max_error": 0.005,
         "min_clearance": 0.1,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.48,
+        "min_copper_edge_clearance": 0.4,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
@@ -193,7 +278,10 @@
         0.0,
         0.1,
         0.25,
-        0.4
+        0.4,
+        0.6,
+        0.8,
+        1.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -225,6 +313,10 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.6,
+          "drill": 0.3
         }
       ],
       "zones_allow_external_fillets": false
@@ -460,6 +552,7 @@
       "single_global_label": "ignore",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
+      "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
@@ -506,10 +599,10 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "nodule-breakout-jan24-gerbers-8",
+      "plot": "keebdeck-hexpansion-gerbers-v3",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "../nodular-base/3d/nodule.stl",
+      "step": "../keebdexpansion.step",
       "svg": "",
       "vrml": ""
     },
@@ -609,6 +702,12 @@
           "label": "LCSC",
           "name": "LCSC",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "MPN",
+          "name": "MPN",
+          "show": false
         }
       ],
       "filter_string": "",

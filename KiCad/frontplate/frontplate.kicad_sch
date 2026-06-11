@@ -221,10 +221,22 @@
 		(uuid "0180781c-4376-49c8-93b2-e702546a7c03")
 	)
 	(junction
+		(at 107.95 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "123656ca-6fa4-41c6-8cc4-9f5cca43738d")
+	)
+	(junction
 		(at 36.83 30.48)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1ddf39d3-fa9c-475f-89a5-8488ee632455")
+	)
+	(junction
+		(at 93.98 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2f080dbb-9815-4b4c-b5bc-e98251e77bce")
 	)
 	(junction
 		(at 76.2 30.48)
@@ -251,6 +263,26 @@
 			(type default)
 		)
 		(uuid "2aefcda3-7a88-4120-80c0-2feb51f11bcf")
+	)
+	(wire
+		(pts
+			(xy 107.95 30.48) (xy 93.98 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59bcedd2-4497-435d-8532-1394e0bcd48a")
+	)
+	(wire
+		(pts
+			(xy 116.84 30.48) (xy 107.95 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87c97112-6178-4beb-b88a-9c1ec554f0de")
 	)
 	(wire
 		(pts
@@ -300,7 +332,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "frontplate:SMTSO2020CTJ"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
 			(at 55.88 27.94 0)
 			(effects
 				(font
@@ -367,7 +399,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "frontplate:SMTSO2020CTJ"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
 			(at 93.98 27.94 0)
 			(effects
 				(font
@@ -434,7 +466,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "frontplate:SMTSO2020CTJ"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
 			(at 36.83 27.94 0)
 			(effects
 				(font
@@ -566,7 +598,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "frontplate:SMTSO2020CTJ"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
 			(at 76.2 27.94 0)
 			(effects
 				(font
@@ -600,6 +632,140 @@
 			(project "frontplate"
 				(path "/9e0e3ef3-79e5-41ac-8b6e-50a08cbcb74d"
 					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 116.84 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f64b44e1-2fc1-4494-8bc9-322f8b3cfa6e")
+		(property "Reference" "H6"
+			(at 119.38 25.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 119.38 27.9399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 116.84 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 116.84 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 116.84 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fab7f7a7-1ea0-404a-bd53-d9122f00a9b6")
+		)
+		(instances
+			(project "frontplate"
+				(path "/9e0e3ef3-79e5-41ac-8b6e-50a08cbcb74d"
+					(reference "H6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 107.95 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fe8ff4ba-a123-4f81-91e8-37ee5d172989")
+		(property "Reference" "H5"
+			(at 110.49 25.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 110.49 27.9399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 107.95 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 107.95 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 107.95 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "baa96c45-ced8-4596-8856-d06fc6b0e812")
+		)
+		(instances
+			(project "frontplate"
+				(path "/9e0e3ef3-79e5-41ac-8b6e-50a08cbcb74d"
+					(reference "H5")
 					(unit 1)
 				)
 			)
